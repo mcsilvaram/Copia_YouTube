@@ -14,8 +14,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 60px;         /* Menos espacio arriba y a los lados */
-  background: white;
+  padding: 3px 60px;         /* Menos espacio arriba y a los lados */
+  background: #ccc;
   /*box-shadow: 0 0 4px rgba(0,0,0,0.1);*/
 }
 
