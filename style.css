@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: arial;
+  font-family: 'Segoe UI', Verdana;
 }
 
 body {
@@ -21,7 +21,7 @@ header {
 
 .logo {
   font-size: 1.5rem;
-  padding: 3px;
+  /*padding: 3px;*/
   width: 50px;
   /*display: inline-block;*/
 }
