@@ -46,27 +46,24 @@ header input {
   display: flex;
 }
 
-aside {
-  width: 200px;
-  background: white;
-  padding: 20px 10px;
-  min-height: 100vh;
-  border-right: 1px solid #ddd;
-}
-
 aside ul {
   list-style: none;
+  padding: 0;
+  margin: 40px;
+  align-items: center;
 }
 
 aside li {
-  margin: 20px 0;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start; /* Alinea a la izquierda */
+  margin: 20px 10px;
   cursor: pointer;
 }
 
 aside li .material-icons {
-  margin-right: 10px;
+  font-size: 25px;
+  margin-bottom: 10px;
 }
 
 main {
