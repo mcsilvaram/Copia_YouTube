@@ -10,17 +10,24 @@ body {
   line-height: 1.6;
 }
 
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 40px;
+  padding: 50px 40px;
   background: white;
-  height: 80px;
+  height: 60px;
 }
 
-.logo img {
-  height: 40px;
+.logo {
+  font-size: 30px;        /* Tamaño más pequeño del texto */
+  padding: 80px;
+  margin: 10px;
+  width: 200px;
+  height: auto;
+  display: flex;
+  align-items: center;
 }
 
 .search-wrapper {
@@ -32,7 +39,7 @@ header {
 
 .search-bar {
   display: flex;
-  width: 600px;
+  width: 650px;
   height: 40px;
   border: 1px solid #ccc;
   border-radius: 20px;
@@ -43,7 +50,7 @@ header {
 .search-bar input {
   flex: 1;
   border: none;
-  padding: 0 16px;
+  padding: 0 20px;
   font-size: 14px;
   outline: none;
 }
@@ -72,6 +79,31 @@ header {
   cursor: pointer;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  background: white;
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+  gap: 150px;
+}
+
+.notifications-account {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.notifications-account .material-icons {
+  font-size: 25px;
+  cursor: pointer;
+}
+
 .crear-btn {
   display: flex;
   align-items: center;
@@ -79,8 +111,8 @@ header {
   background-color: #f1f1f1;
   color: #000;
   border: none;
-  border-radius: 20px;
-  padding: 6px 12px;
+  border-radius: 30px;
+  padding: 6px 18px;
   font-size: 14px;
   cursor: pointer;
   height: 36px;
@@ -106,6 +138,74 @@ header {
   font-size: 20px;
   color: #555;
 }
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  /*border-bottom: 1px solid #ddd; */
+}
+
+.nav-carousel {
+  overflow-x: auto;
+  white-space: nowrap;
+  flex: 1;
+  scroll-behavior: smooth;
+  padding: 5px 0;
+  margin: 3px 180px; /* deja espacio para las flechas */
+}
+
+.nav-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-carousel ul {
+  display: flex;
+  gap: 5px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav-carousel a {
+  padding: 5px 15px;
+  background-color: #f1f1f1;
+  color: #000;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.nav-carousel a:hover {
+  background-color: #e0e0e0;
+}
+
+.nav-arrow {
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  border: none;
+  font-size: 15px;
+  padding: 3px 10px;
+  cursor: pointer;
+  color: #555;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+.nav-arrow.left {
+  left: 140px;
+}
+
+.nav-arrow.right {
+  right: 140px;
+}
+
+.nav-arrow:hover {
+  background-color: #eee;
+}
 
 .user-controls {
   display: flex;
@@ -115,12 +215,13 @@ header {
 
 .container {
   display: flex;
+  margin-bottom: 2px;
 }
 
 aside {
   width: 90px; /* o el ancho que uses */
   background-color: white;
-  padding-top: 15px;
+  padding-top: 2px;
 }
 
 aside ul {
@@ -137,14 +238,14 @@ aside li {
   flex-direction: column;
   align-items: center; /* Centra ícono y texto en vertical */
   justify-content: center;
-  margin: 16px 0;
+  margin: 2px 0;
   font-size: 10px;
   text-align: center;
   cursor: pointer;
 }
 
 aside li .material-icons {
-  font-size: 24px;
+  font-size: 30px;
   margin-bottom: 4px;
 }
 
