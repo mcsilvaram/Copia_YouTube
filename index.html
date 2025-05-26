@@ -13,31 +13,59 @@
 <body>
   <header>
   <div class="logo">
-    <img src="logoYouTube.jpg" alt="logo YouTube" style="height: 60px;">
+    <img src="logoYouTube.jpg" alt="logo YouTube" style="height: 65px;">
   </div>    
 
-  <div class="search-wrapper">
-    <div class="search-bar">
-      <input type="text" placeholder="Buscar">
-      <button class="search-btn">
-        <span class="material-icons">search</span>
-      </button>
+   <div class="search-wrapper">
+      <div class="search-bar">
+        <input type="text" placeholder="Buscar">
+        <button class="search-btn">
+          <span class="material-icons">search</span>
+        </button>
+      </div>
+      <div class="user-actions">
+        <button class="micro-btn">
+          <span class="material-icons">mic</span>
+        </button>
+        <button class="crear-btn">
+          <span>+</span>
+          <p>Crear</p>
+        </button>
+      </div>
+     <div class="notifications-account">
+        <span class="material-icons">notifications</span>
+        <span class="material-icons">account_circle</span>
+      </div>
     </div>
-    <button class="micro-btn">
-      <span class="material-icons">mic</span>
-    </button>
-  </div>
+ </header>
 
-  <div class="user-controls">
-    <button class="crear-btn">
-      <span>+</span>
-      <p>Crear</p>
-    </button>
-    <span class="material-icons">notifications</span>
-    <span class="material-icons">account_circle</span>
-  </div>
-</header>
-
+ <div class="carousel-wrapper">
+  <button class="nav-arrow left" onclick="scrollNav(-200)">&#10094;</button>
+    <nav class="nav-carousel" id="navCarousel">
+      <ul>
+        <li><a href="#todo">Todo</a></li>
+        <li><a href="#musica">Música</a></li>
+        <li><a href="#podcasts">Podcasts</a></li>
+        <li><a href="#avance">Avance</a></li>
+        <li><a href="#thillersdeaccion">Thrillers de Acción</a></li>
+        <li><a href="#mixers">Mixers</a></li>
+        <li><a href="#endirecto">En Directo</a></li>
+        <li><a href="#seriesdetelevision">Series de televisión</a></li>
+        <li><a href="#noticias">Noticias</a></li>
+        <li><a href="#comediaromantica">Comedia romántica</a></li>
+        <li><a href="#misionimposible">Misión imposible</a></li>
+        <li><a href="#peliculasdesuperheroes">Películas de Superhéroes</a></li>
+        <li><a href="#dramacoreano">Drama coreano</a></li>
+      </ul>
+    </nav>
+  <button class="nav-arrow right" onclick="scrollNav(200)">&#10095;</button>
+ </div>
+  <script>
+    function scrollNav(distance) {
+      const carousel = document.getElementById('navCarousel');
+      carousel.scrollBy({ left: distance, behavior: 'smooth' });
+    }
+  </script>
   <div class="container">
     <aside>
         <ul>
