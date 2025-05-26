@@ -138,6 +138,7 @@ header {
   font-size: 20px;
   color: #555;
 }
+
 .carousel-wrapper {
   position: relative;
   display: flex;
@@ -178,7 +179,8 @@ header {
 }
 
 .nav-carousel a:hover {
-  background-color: #e0e0e0;
+  background-color: black;
+  color: white;
 }
 
 .nav-arrow {
