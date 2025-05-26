@@ -262,6 +262,7 @@ main h2 {
 
 .video-grid {
   display: grid;
+  background: #666;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   padding: 16px 0;
@@ -298,7 +299,7 @@ main h2 {
 .video-card p {
   margin: 0 12px 6px;
   font-size: 14px;
-  color: #666;
+  color: #fff;
 }
 
 .video-card .live {
