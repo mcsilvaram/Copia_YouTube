@@ -1,46 +1,46 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>YouTube Clon Simple</title>
 
-  <!-- Fuente Roboto desde Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <!-- Fuentes e iconos -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Header -->
   <header>
-  <div class="logo">
-    <img src="logoYouTube.jpg" alt="logo YouTube" style="height: 65px;">
-  </div>    
+    <div class="logo">
+      <img src="logoYouTube.jpg" alt="logo YouTube" style="height: 65px;">
+    </div>    
 
-   <div class="search-wrapper">
+    <div class="search-wrapper">
       <div class="search-bar">
-        <input type="text" placeholder="Buscar">
-        <button class="search-btn">
-          <span class="material-icons">search</span>
-        </button>
+        <input type="text" placeholder="Buscar" />
+        <button class="search-btn"><span class="material-icons">search</span></button>
       </div>
       <div class="user-actions">
-        <button class="micro-btn">
-          <span class="material-icons">mic</span>
-        </button>
+        <button class="micro-btn"><span class="material-icons">mic</span></button>
         <button class="crear-btn">
-          <span>+</span>
-          <p>Crear</p>
+          <span>+</span><p>Crear</p>
         </button>
       </div>
-     <div class="notifications-account">
+      <div class="notifications-account">
         <span class="material-icons">notifications</span>
         <span class="material-icons">account_circle</span>
       </div>
     </div>
- </header>
+  </header>
 
- <div class="carousel-wrapper">
-  <button class="nav-arrow left" onclick="scrollNav(-200)">&#10094;</button>
+  <!-- Carousel -->
+  <div class="carousel-wrapper">
+    <button class="nav-arrow left" onclick="scrollNav(-200)">&#10094;</button>
     <nav class="nav-carousel" id="navCarousel">
       <ul>
         <li><a href="#todo">Todo</a></li>
@@ -58,149 +58,38 @@
         <li><a href="#dramacoreano">Drama coreano</a></li>
       </ul>
     </nav>
-  <button class="nav-arrow right" onclick="scrollNav(200)">&#10095;</button>
- </div>
-  <script>
-    function scrollNav(distance) {
-      const carousel = document.getElementById('navCarousel');
-      carousel.scrollBy({ left: distance, behavior: 'smooth' });
-    }
-  </script>
+    <button class="nav-arrow right" onclick="scrollNav(200)">&#10095;</button>
+  </div>
+
+  <!-- Contenido principal -->
   <div class="container">
     <aside>
-        <ul>
-            <li>
-                <span class="material-icons">home</span>
-                <span>Inicio</span>
-            </li>
-            <li>
-                <span class="material-icons">play_arrow</span>
-                <span>Shorts</span>
-            </li>
-            <li>
-                <span class="material-icons">subscriptions</span>
-                <span>Suscripciones</span>
-            </li>
-            <li>
-                <span class="material-icons">person</span>
-                <span>Tú</span>
-            </li>
-        </ul>
+      <ul>
+        <li><span class="material-icons">home</span><span>Inicio</span></li>
+        <li><span class="material-icons">play_arrow</span><span>Shorts</span></li>
+        <li><span class="material-icons">subscriptions</span><span>Suscripciones</span></li>
+        <li><span class="material-icons">person</span><span>Tú</span></li>
+      </ul>
     </aside>
 
-<main>
-    <div class="video-grid">
-      <div class="video-card">
-        <img src="https://i.ytimg.com/vi/r6flaqDxbB8/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBIvQQJGGi1938XNkoMXzg_Rz0u-Q">
-        <div class="video-card p">
-          <img src="https://yt3.ggpht.com/C_0vuxe4eptx7vdmcEeNriK5hLt1DTIVJbZv2X6GCq4u5BMoQ-BgglxmM7wbkUDrGJKUD9t6nA=s68-c-k-c0x00ffffff-no-rj">
+    <main>
+      <div class="video-grid">
+        <!-- Puedes repetir esta tarjeta con diferentes datos -->
+        <div class="video-card">
+          <img src="https://i.ytimg.com/vi/r6flaqDxbB8/hq720.jpg" alt="Miniatura" />
+          <div class="video-info">
+            <img src="https://yt3.ggpht.com/C_0vuxe4eptx7vdmcEeNriK5hLt1DTIVJbZv2X6GCq4u5BMoQ-BgglxmM7wbkUDrGJKUD9t6nA=s68-c-k-c0x00ffffff-no-rj" />
+            <h3>Podcast 27 | Cómo Excel cambió mi vida</h3>
+            <p>Excel a Todo Nivel · 5 usuarios</p>
+            <span class="live">🎬 ESTRENO</span>
+          </div>
         </div>
-        <h3>Podcast 27 | Cómo Excel cambió mi vida</h3>
-        <p>Excel a Todo Nivel · 5 usuarios</p>
-        <span class="live">🎬 ESTRENO</span>
+        <!-- Más video-cards aquí... -->
       </div>
-      <div class="video-card">
-        <img src="https://via.placeholder.com/300x180" alt="Miniatura">
-        <h3>Podcast 27 | Cómo Excel cambió mi vida</h3>
-        <p>Excel a Todo Nivel · 5 usuarios</p>
-        <span class="live">🎬 ESTRENO</span>
-      </div>
-      <div class="video-card">
-        <img src="https://via.placeholder.com/300x180" alt="Miniatura">
-        <h3>UNA ENTREGA MUY ESPECIAL | EN VIVO</h3>
-        <p>Audioquin · 25 usuarios</p>
-        <span class="live">🔴 EN DIRECTO</span>
-      </div>
-      <div class="video-card">
-        <img src="https://via.placeholder.com/300x180" alt="Miniatura">
-        <h3>Título del Video 4</h3>
-        <p>Otro Canal · 8 usuarios</p>
-        <span class="live">🎬 ESTRENO</span>
-      </div>
-      <div class="video-card">
-        <img src="https://via.placeholder.com/300x180" alt="Miniatura">
-        <h3>Video Sorpresa</h3>
-        <p>Canal Sorpresa · 20 usuarios</p>
-        <span class="live">🔴 EN DIRECTO</span>
-      </div>
-      <div class="video-card">
-        <img src="https://via.placeholder.com/300x180" alt="Miniatura">
-        <h3>Últimas Noticias</h3>
-        <p>Noticias Hoy · 18 usuarios</p>
-        <span class="live">📺 EN VIVO</span>
-      </div>
-      <div class="video-card">
-        <img src="https://via.placeholder.com/300x180" alt="Miniatura">
-        <h3>Título del Video 4</h3>
-        <p>Otro Canal · 8 usuarios</p>
-        <span class="live">🎬 ESTRENO</span>
-      </div>
-      <div class="video-card">
-        <img src="https://via.placeholder.com/300x180" alt="Miniatura">
-        <h3>Video Sorpresa</h3>
-        <p>Canal Sorpresa · 20 usuarios</p>
-        <span class="live">🔴 EN DIRECTO</span>
-      </div>
-      <div class="video-card">
-        <img src="https://via.placeholder.com/300x180" alt="Miniatura">
-        <h3>Últimas Noticias</h3>
-        <p>Noticias Hoy · 18 usuarios</p>
-        <span class="live">📺 EN VIVO</span>
-      </div>
-      <div class="video-card">
-        <img src="https://via.placeholder.com/300x180" alt="Miniatura">
-        <h3>Título del Video 1</h3>
-        <p>Canal Ejemplo · 12 usuarios</p>
-        <span class="live">🔴 EN DIRECTO</span>
-      </div>
-      <div class="video-card">
-        <img src="https://via.placeholder.com/300x180" alt="Miniatura">
-        <h3>Podcast 27 | Cómo Excel cambió mi vida</h3>
-        <p>Excel a Todo Nivel · 5 usuarios</p>
-        <span class="live">🎬 ESTRENO</span>
-      </div>
-      <div class="video-card">
-        <img src="https://via.placeholder.com/300x180" alt="Miniatura">
-        <h3>UNA ENTREGA MUY ESPECIAL | EN VIVO</h3>
-        <p>Audioquin · 25 usuarios</p>
-        <span class="live">🔴 EN DIRECTO</span>
-      </div>
-      <div class="video-card">
-        <img src="https://via.placeholder.com/300x180" alt="Miniatura">
-        <h3>Título del Video 4</h3>
-        <p>Otro Canal · 8 usuarios</p>
-        <span class="live">🎬 ESTRENO</span>
-      </div>
-      <div class="video-card">
-        <img src="https://via.placeholder.com/300x180" alt="Miniatura">
-        <h3>Video Sorpresa</h3>
-        <p>Canal Sorpresa · 20 usuarios</p>
-        <span class="live">🔴 EN DIRECTO</span>
-      </div>
-      <div class="video-card">
-        <img src="https://via.placeholder.com/300x180" alt="Miniatura">
-        <h3>Últimas Noticias</h3>
-        <p>Noticias Hoy · 18 usuarios</p>
-        <span class="live">📺 EN VIVO</span>
-      </div>
-      <div class="video-card">
-        <img src="https://via.placeholder.com/300x180" alt="Miniatura">
-        <h3>Título del Video 4</h3>
-        <p>Otro Canal · 8 usuarios</p>
-        <span class="live">🎬 ESTRENO</span>
-      </div>
-      <div class="video-card">
-        <img src="https://via.placeholder.com/300x180" alt="Miniatura">
-        <h3>Video Sorpresa</h3>
-        <p>Canal Sorpresa · 20 usuarios</p>
-        <span class="live">🔴 EN DIRECTO</span>
-      </div>
-      <div class="video-card">
-        <img src="https://via.placeholder.com/300x180" alt="Miniatura">
-        <h3>Últimas Noticias</h3>
-        <p>Noticias Hoy · 18 usuarios</p>
-        <span class="live">📺 EN VIVO</span>
-      </div>
-    </div>
-  </main>
+    </main>
+  </div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
 </html>
