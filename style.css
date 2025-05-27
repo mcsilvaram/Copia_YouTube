@@ -1,6 +1,10 @@
-{
-  margin: 0;
-  padding: 0;  /*box-sizing: border-box;*/
+/* =================== */
+/* Estilos Generales   */
+/* =================== */
+* {
+  margin: 0; 
+  padding: 0;
+  /* box-sizing: border-box; */
 }
 
 body {
@@ -11,6 +15,9 @@ body {
 }
 
 
+/* =================== */
+/*     Header          */
+/* =================== */
 header {
   display: flex;
   justify-content: space-between;
@@ -21,7 +28,7 @@ header {
 }
 
 .logo {
-  font-size: 30px;        /* Tamaño más pequeño del texto */
+  font-size: 30px;
   padding: 80px;
   margin: 10px;
   width: 200px;
@@ -30,6 +37,10 @@ header {
   align-items: center;
 }
 
+
+/* =================== */
+/* Barra de Búsqueda   */
+/* =================== */
 .search-wrapper {
   display: flex;
   align-items: center;
@@ -79,14 +90,16 @@ header {
   cursor: pointer;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 10px;
-  background: white;
+.micro-btn .material-icons,
+.search-btn .material-icons {
+  font-size: 20px;
+  color: #555;
 }
 
+
+/* ============================ */
+/* Controles de Usuario        */
+/* ============================ */
 .user-actions {
   display: flex;
   align-items: center;
@@ -133,18 +146,15 @@ header {
   font-size: 14px;
 }
 
-.micro-btn .material-icons,
-.search-btn .material-icons {
-  font-size: 20px;
-  color: #555;
-}
 
+/* ============================ */
+/* Carrusel de Navegación      */
+/* ============================ */
 .carousel-wrapper {
   position: relative;
   display: flex;
   align-items: center;
   background-color: white;
-  /*border-bottom: 1px solid #ddd; */
 }
 
 .nav-carousel {
@@ -153,7 +163,7 @@ header {
   flex: 1;
   scroll-behavior: smooth;
   padding: 5px 0;
-  margin: 3px 180px; /* deja espacio para las flechas */
+  margin: 3px 180px;
 }
 
 .nav-carousel::-webkit-scrollbar {
@@ -209,19 +219,21 @@ header {
   background-color: #eee;
 }
 
-.user-controls {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
 
+/* =================== */
+/* Layout Principal    */
+/* =================== */
 .container {
   display: flex;
   margin-bottom: 2px;
 }
 
+
+/* =================== */
+/* Aside (Sidebar)     */
+/* =================== */
 aside {
-  width: 90px; /* o el ancho que uses */
+  width: 90px;
   background-color: white;
   padding-top: 2px;
 }
@@ -232,13 +244,13 @@ aside ul {
   margin: 8px;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centra todo el contenido dentro del aside */
+  align-items: center;
 }
 
 aside li {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centra ícono y texto en vertical */
+  align-items: center;
   justify-content: center;
   margin: 10px 10px;
   font-size: 12px;
@@ -251,6 +263,10 @@ aside li .material-icons {
   margin-bottom: 4px;
 }
 
+
+/* =================== */
+/* Contenido Principal */
+/* =================== */
 main {
   flex: 1;
   padding: 20px;
@@ -300,7 +316,6 @@ main h2 {
   font-size: 12px;
   border-radius: 50%;
   font-weight: 300;
-  /*color: #666;*/
 }
 
 .video-card .live {
