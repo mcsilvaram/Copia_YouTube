@@ -254,8 +254,6 @@ aside li .material-icons {
 main {
   flex: 1;
   padding: 20px;
-  max-height: calc(100vh - 100px); /* Altura máxima (ajustable) */
-  overflow-y: auto;                /* Scroll vertical automático */
 }
 
 main h2 {
@@ -264,10 +262,9 @@ main h2 {
 
 .video-grid {
   display: grid;
-  background: #fff;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-  padding: 16px 4px;
+  padding: 16px 0;
 }
 
 .video-card {
@@ -285,7 +282,7 @@ main h2 {
 }
 
 .video-card img {
-  width: 70%;
+  width: 100%;
   height: auto;
   aspect-ratio: 16 / 9;
   object-fit: cover;
@@ -293,15 +290,17 @@ main h2 {
 }
 
 .video-card h3 {
-  margin: 6px 10px 2px;
+  margin: 8px 12px 4px;
   font-size: 16px;
   font-weight: 500;
 }
 
 .video-card p {
   margin: 0 12px 6px;
-  font-size: 14px;
-  color: #fff;
+  font-size: 12px;
+  border-radius: 50%;
+  font-weight: 300;
+  /*color: #666;*/
 }
 
 .video-card .live {
