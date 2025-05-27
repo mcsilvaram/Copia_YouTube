@@ -22,7 +22,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 40px;
+  padding: 10px 40px;
   background: white;
   height: 60px;
 }
@@ -305,6 +305,14 @@ main h2 {
   display: block;
 }
 
+.video-card .thumbnail {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
 .video-card h3 {
   margin: 8px 12px 4px;
   font-size: 16px;
@@ -314,8 +322,42 @@ main h2 {
 .video-card p {
   margin: 0 12px 6px;
   font-size: 12px;
-  border-radius: 50%;
+  border-radius: 50%; /* ¡Esto no debe estar aquí! */
   font-weight: 300;
+}
+
+.subscriber-logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.video-info {
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.channel-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.text-info h3 {
+  font-size: 14px;
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.text-info p {
+  margin: 2px 0 0;
+  font-size: 12px;
+  color: #606060;
 }
 
 .video-card .live {
