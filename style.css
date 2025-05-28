@@ -20,67 +20,80 @@ body {
 /* =================== */
 header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 12px 24px;
-  background-color: white;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  align-items: center;
+  padding: 10px 40px;
+  background: white;
+  height: 60px;
 }
 
-.logo img {
-  height: 50px;
-}
-
-.search-wrapper {
-  flex: 1;
+.logo {
+  font-size: 30px;
+  padding: 60px;
+  margin: 10px;
+  width: 200px;
+  height: auto;
   display: flex;
   align-items: center;
+}
+
+
+/* =================== */
+/* Barra de Búsqueda   */
+/* =================== */
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  flex: 1;
   justify-content: center;
-  gap: 16px;
 }
 
 .search-bar {
   display: flex;
-  align-items: center;
+  width: 650px;
+  height: 40px;
   border: 1px solid #ccc;
-  border-radius: 24px;
+  border-radius: 20px;
   overflow: hidden;
-  width: 100%;
-  max-width: 500px;
+  background-color: white;
 }
 
 .search-bar input {
   flex: 1;
-  padding: 8px 16px;
   border: none;
+  padding: 0 20px;
+  font-size: 14px;
   outline: none;
 }
 
 .search-btn {
-  background: none;
+  width: 60px;
+  background-color: #f1f1f1;
   border: none;
-  padding: 8px;
+  border-left: 1px solid #ccc;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.micro-btn {
+  margin-left: 10px;
+  background-color: #f1f1f1;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
 }
 
-.user-actions, .notifications-account {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.crear-btn {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  border: none;
-  background: #eee;
-  border-radius: 20px;
-  padding: 6px 12px;
-  cursor: pointer;
+.micro-btn .material-icons,
+.search-btn .material-icons {
+  font-size: 20px;
+  color: #555;
 }
 
 
@@ -138,43 +151,74 @@ header {
 /* Carrusel de Navegación      */
 /* ============================ */
 .carousel-wrapper {
+  position: relative;
   display: flex;
   align-items: center;
-  overflow: hidden;
-  padding: 0 24px;
-  background-color: #f9f9f9;
+  background-color: white;
 }
 
 .nav-carousel {
   overflow-x: auto;
   white-space: nowrap;
-  scroll-behavior: smooth;
   flex: 1;
+  scroll-behavior: smooth;
+  padding: 5px 0;
+  margin: 3px 180px;
+}
+
+.nav-carousel::-webkit-scrollbar {
+  display: none;
 }
 
 .nav-carousel ul {
   display: flex;
-  gap: 12px;
-  list-style: none;
-  padding: 12px 0;
+  gap: 5px;
+  padding: 0;
   margin: 0;
+  list-style: none;
 }
 
-.nav-carousel li a {
-  padding: 6px 12px;
-  background-color: #eee;
-  border-radius: 16px;
+.nav-carousel a {
+  padding: 5px 15px;
+  background-color: #f1f1f1;
+  color: #000;
+  border-radius: 5px;
   text-decoration: none;
-  font-size: 14px;
-  color: black;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.nav-carousel a:hover {
+  background-color: black;
+  color: white;
 }
 
 .nav-arrow {
-  background: none;
+  position: absolute;
+  z-index: 1;
+  background-color: white;
   border: none;
-  font-size: 24px;
+  font-size: 15px;
+  padding: 3px 10px;
   cursor: pointer;
+  color: #555;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  transition: background-color 0.2s;
 }
+
+.nav-arrow.left {
+  left: 140px;
+}
+
+.nav-arrow.right {
+  right: 140px;
+}
+
+.nav-arrow:hover {
+  background-color: #eee;
+}
+
 
 /* =================== */
 /* Layout Principal    */
