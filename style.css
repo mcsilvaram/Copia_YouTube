@@ -279,16 +279,11 @@ main h2 {
 .video-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  padding: 16px 0;
-
-  /* ✅ Scroll vertical interno */
-  max-height: 600px; /* o la altura que necesites */
-  overflow-y: auto;
-
-  /* Opcional: solo si quieres que tenga un borde visible o destaque */
-  border: 1px solid #ccc;
-  padding-right: 10px; /* para que no se tape el scroll */
+  gap: 14px;
+  padding: 16px;
+  height: 180vh;            /* Alto máximo visible */
+  overflow-y: auto;        /* Scroll vertical solo dentro */
+  scroll-behavior: smooth;
 }
 
 .video-card {
