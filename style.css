@@ -67,13 +67,13 @@ header {
 /* Barra de Búsqueda   */
 /* =================== */
 .search-wrapper {
-  width: 600px;
-  padding-top: 56px;
+  height: 56px;
+  padding: 0 16px;
+  display: flexbox;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   align-items: center;
-  /*flex: 1;
-  justify-content: center;*/
+  justify-content: space-between;
 }
 
 .search-bar {
@@ -83,21 +83,13 @@ header {
   border-color: #c6c6c6;
   border-right: 0;
   background-color: #212121;
-  box-shadow
-
-   /* border-radius: 40px 0 0 40px;
-    margin-left: 32px;
-    padding: 0 4px 0 16px;
-    display: flex*/
-;
-    flex: 1;
-    cursor: text;
+  box-shadow: inset 0 1px 2px #eee;
+  border-radius: 40px 0 0 40px;
+  margin-left: 32px;
+  padding: 0 4px 0 16px;
   display: flex;
-  font-weight: 100;
-  border: 1px solid #ccc;
-  border-radius: 20px;
-  overflow: hidden;
-  background-color: white;
+  flex: 1;
+  cursor: text;
 }
 
 .search-bar input {
