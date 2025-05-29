@@ -57,8 +57,8 @@ header {
 /* Barra de Búsqueda   */
 /* =================== */
 .search-wrapper {
-  height: 56px;
-  padding: 0 16px;
+  height: 60px;
+  padding: 1px 16px;
   display: flexbox;
   display: flex;
   flex-direction: row;
