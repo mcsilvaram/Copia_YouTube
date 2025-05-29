@@ -67,15 +67,33 @@ header {
 /* Barra de Búsqueda   */
 /* =================== */
 .search-wrapper {
+  width: 600px;
+  padding-top: 56px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  flex: 1;
-  justify-content: center;
+  /*flex: 1;
+  justify-content: center;*/
 }
 
 .search-bar {
+  position: relative;
+  align-items: center;
+  border: 1px solid;
+  border-color: #c6c6c6;
+  border-right: 0;
+  background-color: #212121;
+  box-shadow
+
+   /* border-radius: 40px 0 0 40px;
+    margin-left: 32px;
+    padding: 0 4px 0 16px;
+    display: flex*/
+;
+    flex: 1;
+    cursor: text;
   display: flex;
-  
+  font-weight: 100;
   border: 1px solid #ccc;
   border-radius: 20px;
   overflow: hidden;
