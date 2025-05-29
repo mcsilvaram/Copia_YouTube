@@ -63,7 +63,7 @@ header {
 
 .search-bar {
   display: flex;
-  width: 650px;
+  width: 750px;
   height: 40px;
   border: 1px solid #ccc;
   border-radius: 20px;
@@ -74,7 +74,7 @@ header {
 .search-bar input {
   flex: 1;
   border: none;
-  padding: 0 20px;
+  padding: 0 10px;
   font-size: 14px;
   outline: none;
 }
@@ -105,7 +105,7 @@ header {
 
 .micro-btn .material-icons,
 .search-btn .material-icons {
-  font-size: 40px;
+  font-size: 25px;
   color: #555;
 }
 
@@ -116,13 +116,13 @@ header {
 .user-actions {
   display: flex;
   align-items: center;
-  gap: 150px;
+  gap: 180px;
 }
 
 .notifications-account {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 15px;
 }
 
 .notifications-account .material-icons {
@@ -133,12 +133,12 @@ header {
 .crear-btn {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 4px;
   background-color: #f1f1f1;
   color: #000;
   border: none;
   border-radius: 30px;
-  padding: 6px 18px;
+  padding: 4px 15px;
   font-size: 14px;
   cursor: pointer;
   height: 36px;
@@ -302,7 +302,7 @@ header {
 }
 
 .sidebar-section li span.material-icons {
-  font-size: 25px; /* Tamaño del ícono */
+  font-size: 30px; /* Tamaño del ícono */
   margin-right: 10px;
   vertical-align: middle;
 }
