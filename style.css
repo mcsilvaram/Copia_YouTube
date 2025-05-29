@@ -30,7 +30,7 @@ header {
   background: white;
   height: 50px;
   position: fixed;
-  width: 100%;
+  width: 98%;
   top: 0;
   z-index: 1000;
   box-shadow: 0 1px 2px rgba(0,0,0,0.1);
@@ -41,7 +41,7 @@ header {
 
 .logo {
   font-size: 30px;
-  padding: 10px;
+  padding: 20px;
   margin: 10px;
   width: 200px;
   height: auto;
@@ -49,44 +49,41 @@ header {
   align-items: center;
 }
 
-
-
-
-
 /* =================== */
 /* Barra de Búsqueda   */
 /* =================== */
 .search-wrapper {
-  height: 80px;
-  padding: 1px 16px;
+  height: 30px;
+  padding: 1px 1px;
   display: flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex: 0.5;
+  align-items: left;
   justify-content: space-between;
 }
 
 .search-bar {
   position: relative;
-  align-items: center;
+  align-items: left;
   border: 1px solid;
   border-color: #c6c6c6;
   border-right: 0;
   /*background-color: #212121;*/
-  box-shadow: inset 0 1px 2px #eee;
+  box-shadow: inset 0 1px 1px #eee;
   border-radius: 40px 40px;
-  margin-left: 32px;
-  padding: 0 4px 0 16px;
+  margin-left: 20px;
+  padding: 0 2px 0 2px;
   display: flex;
-  flex: 1;
+  flex: 0.8;
   cursor: text;
 }
+
 .menu-toggle {
   background: none;
   border: none;
-  font-size: 28px;
+  font-size: 40px;
   cursor: pointer;
-  margin-right: 20px;
+  margin-right: 10px;
   color: #555;
   display: flex;
   align-items: center;
@@ -107,7 +104,7 @@ header {
 }
 
 .search-btn {
-  width: 60px;
+  width: 50px;
   background-color: #f1f1f1;
   border: none;
   border-left: 1px solid #ccc;
