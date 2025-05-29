@@ -1,0 +1,100 @@
+<header class="header">
+  <div class="left-section">
+    <span class="material-icons menu-icon">menu</span>
+    <img src="youtube-logo.png" alt="YouTube Logo" class="logo">
+  </div>
+
+  <div class="center-section">
+    <input type="text" placeholder="Buscar" class="search-bar">
+    <button class="search-btn"><span class="material-icons">search</span></button>
+    <button class="mic-btn"><span class="material-icons">mic</span></button>
+  </div>
+
+  <div class="right-section">
+    <button class="icon-btn"><span class="material-icons">video_call</span></button>
+    <button class="icon-btn"><span class="material-icons">notifications</span></button>
+    <img src="user-icon.png" alt="User" class="user-avatar">
+  </div>
+</header>
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.left-section,
+.center-section,
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon {
+  font-size: 28px;
+  cursor: pointer;
+  margin-right: 16px;
+}
+
+.logo {
+  height: 24px;
+}
+
+.center-section {
+  flex: 1;
+  max-width: 600px;
+  margin: 0 20px;
+}
+
+.search-bar {
+  flex: 1;
+  height: 36px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+}
+
+.search-btn {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 20px 20px 0;
+  height: 36px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.mic-btn {
+  margin-left: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  margin: 0 6px;
+  cursor: pointer;
+}
+
+.icon-btn .material-icons {
+  font-size: 24px;
+}
+
+.user-avatar {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
